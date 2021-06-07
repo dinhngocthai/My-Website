@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>MyWebsite</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="themify-icons/themify-icons.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap"
+      rel="stylesheet"
+    /> -->
+    <style>
+
+      table {
+        width: 93% !important;
+        margin-top: 20px;
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+
+      /*---table data*/
+      tbody th{
+        font-weight: unset;
+      }
+      .content {
+        font-size: 28px;
+        font-weight: bold;
+      }
+
+      .input_box {
+        margin-bottom: 7px;
+        font-size: 16px;
+      }
+
+      .input__ input {
+        width: 90%;
+        border-radius: 7px;
+        border: 1px solid #d8d8d8;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div id="main">
+ 
+
+      <div id="content" style="padding-top: 3%">
+        <div id="" style="background-color: white">
+          <div class="add-user">
+            <div class="content">
+              <span>Phần mềm quản lý thông tin sinh viên</span>
+            </div>
+            <div class="add-form">
+              <form id="form-add-user" method="post" action="">
+                <div class="input_box">
+                  <div class="text">
+                    <span>Tên sinh viên</span>
+                    <input
+                      type="text"
+                      name="index"
+                      id="index"
+                      value=""
+                      hidden="true"
+                    />
+                  </div>
+                  <div class="input__">
+                    <input id="username" type="text" name="username" />
+                  </div>
+
+                </div>
+                <div class="input_box">
+                  <div class="text">
+                    <span>Mã sinh viên</span>
+                  </div>
+                  <div class="input__">
+                    <input id="id-user" type="text" name="id-user" />
+                  </div>
+                </div>
+                <div class="input_box">
+                  <div class="text">
+                    <span>Email</span>
+                  </div>
+                  <div class="input__">
+                    <input id="email" type="text" name="email" />
+                  </div>
+                </div>
+                <div class="input_box">
+                  <div class="text">
+                    <span>Số điện thoại</span>
+                  </div>
+                  <div class="input__">
+                    <input id="phone" type="text" name="phone" />
+                  </div>
+
+                </div>
+                <div class="input_box">
+                  <div class="text">
+                    <span>Địa chỉ</span>
+                  </div>
+                  <div class="input__">
+                    <input id="address" type="text" name="address" />
+                  </div>
+
+
+                </div>
+                <div class="button">
+                  <input
+                    type="submit"
+                    value="Thêm"
+                  />
+                  <!--<input type="reset" value="Tải lại">-->
+                  <input
+                    type="submit"
+                    value="Xóa"
+                  />
+                  <input
+                    type="submit"
+                    value="Tìm"
+                  />
+                </div>
+              </form>
+            </div>
+
+            <table
+              class="table table-data2"
+              id="data-list"
+              style="border: 1px solid black"
+            >
+              <colgroup>
+                <col width="5%" span="2" />
+                <col width="15%" span="3" />
+                <col width="30%" span="1" />
+                <col width="15%" span="2" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>STT</th>
+                  <th title=" Mã sinh viên">MSV</th>
+                  <th>Tên sinh viên</th>
+                  <th>Email</th>
+                  <th>Số điện thoại</th>
+                  <th>Địa chỉ</th>
+                  <th>Tác vụ</th>
+                </tr>
+              </thead>
+              <tbody id="result">
+                <th>1</th>
+                <th>17130209</th>
+                <th>Đinh Ngọc Thái</th>
+                <th>17130209@gmail.com</th>
+                <th>0704614563</th>
+                <th>Biên Hòa, Đồng Nai</th>
+                <th><input type="checkbox" /></th>
+              </tbody>
+            </table>
+            <tr>
+              <td colspan="5">
+                <div class=""><a href="/Lab">Go Back</a></div>
+              </td>
+            </tr>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+
+  </body>
+</html>

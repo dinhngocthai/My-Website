@@ -1,0 +1,19 @@
+{
+  "hosting": {
+    "public": "build",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "header":[
+     { "source":"/service-woker.js","header":[{"key": "Cache-Control", "value" :"no-cache"}]}
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
